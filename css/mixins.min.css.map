@@ -3,7 +3,8 @@
     "mappings": "",
     "sources": [
         "../src/components/sass/mixins.scss",
-        "../node_modules/include-media/src/_config.scss"
+        "../src/components/sass/_config.scss",
+        "../src/components/sass/_media.scss"
     ],
     "names": [],
     "file": "mixins.min.css"
