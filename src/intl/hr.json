@@ -1,0 +1,108 @@
+{
+    "seo_home": "Početna Stranica",
+    "seo_contact": "Kontakt",
+    "seo_about": "O Nama",
+    "seo_projects": "Projekti",
+    "quote": "Fotografija se ne slika,{br}ona se stvara!",
+    "quote_author": " - Ansel Adams",
+    "what_is": "Što je Negativ Studio?<span> Što je Negativ Studio?</span> Što je Negativ Studio? Što je Negativ Studio?", 
+    "what_description": "Smješten u srcu mediterana,<span> Negativ Studio</span> je profesionalac za fotografiju nekretnina koji će pomoći vašem posjedu da postigne taj potreban veći ranking.",
+    "what_description_second": "Dugogodišnji rad i iskustvo doveli su nas do toga da se možemo ponosno nazvati profesionalnim.",
+    "link_about":"O nama",
+    "link_projects":"O projektima",
+    "link_contact":"Pričajmo",
+    "did_you_know":"DA LI STE ZNALI DA SA PROFESIONALNIM SLIKAMA DOBIVATE 61% VIŠE POGLEDA? DA LI STE ZNALI DA SA PROFESIONALNIM SLIKAMA DOBIVATE 61% VIŠE POGLEDA? DA LI STE ZNALI DA SA PROFESIONALNIM SLIKAMA DOBIVATE 61% VIŠE POGLEDA?",
+    "did_you_know_second":"  DA LI STE ZNALI DA SA PROFESIONALNIM SLIKAMA DOBIVATE <span>61% VIŠE POGLEDA?</span> DA LI STE ZNALI DA SA PROFESIONALNIM SLIKAMA DOBIVATE 61% VIŠE POGLEDA? ",
+    "recent":"Nedavni projekti",
+    "see_all":"Vidi Sve",
+    "snaps":"Svježe fotke našeg zadnjeg projekta",
+    "stanger":"Villa Štanger",
+    "stanger_desc":"Jedinstven mediteranski stil u skladu s prirodom",
+    "how":"Kako radimo to što radimo? <span> Kako radimo to što radimo?</span> Kako radimo to što radimo? Kako radimo to što radimo?",
+    "how_desc":"S napredkom u području dronske i aparatske tehnologije {br} naši najnoviji uređaji pružaju najvišu moguću kvalitetu na tržištu!",
+    "drone":"DRON",
+    "drone_desc":"Zračne scene su navigirane s najnovijom dronskom tehnologijom.",
+    "camera":"KAMERA",
+    "camera_desc":"Naši najnoviji SLR fotoaparati Canon opremljenisa svim rasponima objektiva spremni su čak i za najzahtjevnije krajolike.",
+    "lights":"SVJETLO",
+    "lights_desc":"Bez odgovarajućeg svjetla nema kvalitetne fotografije. Imamo studijska svjetla koja mogu podići kvalitetu interijera kako bi impresionirali bilo kojeg klijenta.",
+    "convinced":"Da li ste uvjereni već? <span>Da li ste uvjereni već?</span> Da li ste uvjereni već? Da li ste uvjereni već?",
+    "convinced_desc":"Omogućavanjem profesionalne usluge koja će trajati digitalnim vjekovima, garantiramo da će vaše nekretnine {br} biti izbačene na tržište kako bi ih svi vidjeli.",
+    "notfound": {
+      "title": "NIJE PRONAĐENO", 
+      "description": "NEGATIV STUDIO NIJE OVDJE {br} VRATITE SE!",
+      "paragraph": "Naletili ste na mrtvu ulicu...."
+    },
+    "navigation":{
+      "work": "Naše zlato",
+      "about_us": "O Negativ studiju",
+      "contact_us": "Javite nam se"
+
+    },
+    "header":{
+      "reachme": "Pišite nam"
+
+    },
+    "footer":{
+      "legal":"Pravne stavke",
+      "work": "Naši projekti",
+      "about_us": "O studiju",
+      "contact_us": "Javite nam se"
+
+    },
+    "projects":{
+      "backto": "NATRAG NA VRH",
+      "ourshoots":"Naši projekti",
+      "project-one": "Novi dragulj Kvarnerskog zaljeva s pogledom na cijelu obalu Jadranskog Mora",
+      "project-two": "U kontinentalnom djelu Hrvatske samo 50 kilometara od Jadrana leži rezidencija koja će zadovoljiti svakog trekkera",
+      "project-three": "Novi dragulj Kvarnerskog zaljeva s pogledom na cijelu obalu Jadranskog Mora",
+      "project-four": "Novi dragulj Kvarnerskog zaljeva s pogledom na cijelu obalu Jadranskog Mora",
+      "project-five": "Novi dragulj Kvarnerskog zaljeva s pogledom na cijelu obalu Jadranskog Mora",
+      "project-six": "Novi dragulj Kvarnerskog zaljeva s pogledom na cijelu obalu Jadranskog Mora"      
+
+    },
+    "about":{
+      "quote": "ZNAČI OĆETE SAZNATI VIŠE?",
+      "quote-two":"IMA SMISLA",
+      "hero-one": "Želite da se vaša nekretnina nađe na listi najtraženijih? Ne brinite, tu smo najbolji.",
+      "description-one": "Negativ studio se bavi profesionalnim fotografiranjem interijera i eksterijera. ",
+      "description-two": " Dugogodišnji rad edukacija te iskustvo doveli su nas do toga da se možemo ponosno nazvati profesionalnim. Naši najčešći klijenti su renomirane hotelske kuće, arhitekti, dizajneri interijera, vile za odmor te apartmani.",
+      "description-one-right": "Svrha fotografiranja može biti najam, prodaja te prezentacija raznih arhitektonskih ili dizajnerskih riješenja.",
+      "description-two-right": " Svakom projektu pristupamo individualno i s  predanošću bio on zahtjevan za nas ili ne. Vodimo se time da kroz fotografiju ne prikazujemo samo ono što vidimo nego pokušavamo prenijeti emociju....",
+      "life": "ŽIVOT JE KAO KAMERA",
+      "focus": "FOKUSIRAJ SE NA ONO ŠTO JE VAŽNO,",
+      "capture": "POHRANI DOBRA VREMENA",      
+      "develop": "RAZVIJ NEGATIVE,",      
+      "things": "I AKO STVARI NE USPIJU,",      
+      "shot": "PROBAJ JOŠ JEDNOM",      
+      "professional": "Vaš profesionalac",      
+      "oliver": "Bok, ja sam Oliver!",      
+      "description-three": "Oliver je u fotografiji od svojih prvih dana kada je izgovorio prve riječi koje su bile; canon!",      
+      "description-four": " Kao dječak počeo je znatiželjno promatrati život kroz leću kada je prvi put vidio u staroj crvenoj sobi život prvih negativa. Ništa više nije bilo isto! Način da pohrani trenutke u vremenu natjerao ga je da svakog dana sa strašću sve više napreduje.",
+      "link-contact":"Pričajmo",
+      "clients":"Neki od klijenata",
+      "location":"Zašto uložiti u profesionalno fotografiranje vaše nekretnine?",
+      "answer-one":"Upravo zato što jedino fotografija stoji između Vas i potencijalnog kupca ili iznajmljivača!",
+      "answer-two":"Imate samo jednu šansu za ostavit prvi dojam!",
+      "answer-three":"Gosti i kupci provode više od 60% pregledavajuću slike nekretnina, soba, vila za najam ili kupnju.",
+      "answer-four":"Nekretnine sa profesionalnim fotografijama ostvaruju 118% više pregleda te ostvaruju 47% više dobiti od nekretnina koje nisu uložile sredstva u tu svrhu.",
+      "conclusion":"To su samo neke od činjenica zašto biste trebali koristit isključivo usluge profesionalnih fotografa.{br} Slobodno nam se obratite, pitajte, zatražite ponudu ili savijet.{br} Tu smo na Vašem raspolaganju."
+
+    },
+    "contact":{
+      "quote": "Mislili ste na...",
+      "name":"Ja sam",
+      "send-it": "Pošalji",
+      "mail": "Moj email je",
+      "subject": "Radi se o",
+      "message": "Poruka je",
+      "error": "Upsss! Došlo je do greške prilikom slanja!",
+      "phone": "Možete nam i poslati SMS, poziv, glasovnu poštu ili samo spremiti kontakt"
+    },
+    "lightbox":{
+      "close": " Zatvori"
+      
+    }
+    
+
+  } 

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/components/sass/mixins.scss",
+        "../node_modules/include-media/src/_config.scss"
+    ],
+    "names": [],
+    "file": "mixins.min.css"
+}

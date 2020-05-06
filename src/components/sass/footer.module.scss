@@ -1,0 +1,231 @@
+@import 'mixins.scss';
+
+/*----------footer holder wrapper----------------*/
+
+.footerContainer{
+    color: #f2f2f2;
+    .footerWrapper{
+        font-family: 'Mark-Medium'; 
+        @include letterSpacing(2px);
+        @include fontSize(14px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .legalCategory{
+            display: flex;
+        }
+    @include biggerPhone{
+        flex-direction: column;
+        align-items: stretch;
+        .legalCategory{
+            display: none;
+        }
+        a{
+          &.copyright{
+              display: none;
+          }
+            padding: 1.5em;
+        }
+    }
+    @include tablet{
+        flex-direction: column;
+        align-items: stretch;
+        .legalCategory{
+            display: none;
+        }
+        .navigationCategory, .legalCategory{
+            a{
+                display: flex;
+                align-items: center;
+                .linkWrapper{
+                    display: flex;
+                    flex:1;
+                }
+                span{
+                    width: 25px;
+                    height: 25px;
+                    background: no-repeat right url(../../images/icons/footer-pointer.svg);
+                    display: flex;
+                    flex: 1;
+                }
+            }
+        }
+        a{
+           
+          &.copyright{
+              display: none;
+          }
+            padding: 1.5em;
+        }
+    }
+        a{
+            
+            color: #f2f2f2;
+            .legal{
+                color: rgba($color: #ffffff, $alpha: 0.5);
+                //text-transform: uppercase;
+            }
+        }
+    
+        .footerNavigationWrapper{
+            display: flex;
+            text-transform: uppercase;
+            justify-content: space-around;
+            flex-basis: 33%;
+            @include biggerPhone{
+                flex-basis: 100%;
+                flex-direction: column;
+                div{
+
+                   display: flex;
+                   align-items: stretch;
+                    a{
+                        width: 100%;
+                    }
+
+                }
+            }
+            @include tablet{
+                flex-basis: 100%;
+                flex-direction: column;
+                div{
+
+                   display: flex;
+                   align-items: stretch;
+                    a{
+                        width: 100%;
+                    }
+
+                }
+            }
+         
+        }
+        .phoneCategory{
+            @include biggerPhone{
+                padding: 1em 6px;
+                a{
+                    margin-left: 3px;
+                    padding: 0;
+                    @include letterSpacing(2px);
+                    @include fontSize(14px);
+                }
+            }
+            @include tablet{
+                padding: 1em 6px;
+                a{
+                    margin-left: 3px;
+                    padding: 0;
+                    @include letterSpacing(2px);
+                    @include fontSize(14px);
+                }
+            }
+            a{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 40px;
+                    height: 40px; 
+                }
+
+            }
+        }
+        .bottomLast{
+            @include biggerPhone{
+            display: flex;
+            padding-top: 2em;
+            }
+            @include tablet{
+                display: flex;
+                padding-top: 2em;
+                }
+            .languageHolder{
+                display: none;
+                
+                @include biggerPhone{
+                    display: flex;
+                    flex: 1;
+                    justify-content: flex-end;
+
+                    .buttonLanguage{
+                        padding: 10px;
+                        text-align: center;
+                        @include letterSpacing(3px);
+                        font-family: 'Mark-Bold'; 
+                            span{
+                                width: 25px;
+                                display: flex;
+                                height: 10px;
+                                margin: 0;
+                                border-bottom: 2px solid #0093d8;
+                                 }
+                            }
+                 }
+                 @include tablet{
+                    display: flex;
+                    flex: 1;
+                    justify-content: flex-end;
+
+                    .buttonLanguage{
+                        padding: 10px;
+                        text-align: center;
+                        @include letterSpacing(3px);
+                        font-family: 'Mark-Bold'; 
+                            span{
+                                width: 25px;
+                                display: flex;
+                                height: 10px;
+                                margin: 0;
+                                border-bottom: 2px solid #0093d8;
+                                 }
+                            }
+                 }
+            }
+            .socialContainer{
+                display: flex;
+                @include biggerPhone{
+                    padding: 0;
+                    flex: 1;
+                    .socialInner{
+                        display: flex;
+                        align-items: center;
+                    a{
+                        padding: 1em;
+                        
+                            }
+                     }
+                 }
+                @include tablet{
+                    padding: 0;
+                    flex: 1;
+                    .socialInner{
+                        display: flex;
+                        align-items: center;
+                    a{
+                        padding: 1em;
+                        
+                            }
+                     }
+                 }
+               div{
+                   &:first-of-type{
+                    @include biggerPhone{
+                        margin-right: 0px;
+                    }
+                    @include tablet{
+                        margin-right: 0px;
+                    }
+                    margin-right: 25px;
+                   }
+                   img{
+                    width: 25px;
+                    height: 25px; 
+                   }
+               }
+            }
+
+        }
+
+    }
+
+}
+

@@ -1,0 +1,314 @@
+
+@import 'mixins.scss';
+
+
+/*----------header holder wrapper----------------*/
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    .navigationContainer{
+        height: 100vh;
+        background: no-repeat center #f2f2f2 url(../../images/icons/gradient-bullet.svg);
+        background-size: 200%;
+        
+       //@include navigationBackgroundAnimate;
+       @include biggerPhone{
+        background-size: 500%;
+      // @include phoneNavigationBackgroundAnimate;
+    }
+    @include tablet{
+        background-size: 400%;
+       // @include navigationBackgroundAnimate;
+    }
+
+        .backdrop{
+            width: 100%;
+            height: 100%;
+            -webkit-backdrop-filter: blur(55px);
+            backdrop-filter: blur(55px);
+            background-color: rgba(250, 250, 250, 0.5);
+            transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+        .textWrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 91vh;
+            @include biggerPhone{
+                height: 88vh;
+
+            }
+            .textContainer{
+                margin-left: 15%;
+                @include biggerPhone{
+                    margin-left: 0;
+                }
+                @include tablet{ 
+                    margin-left: 5%;
+                }
+            .navigationText{
+                padding:1.5em;
+                h1{
+                    @include fontSize(60px);
+                    @include letterSpacing(8px);
+                    font-family: 'Mark-Extralight'; 
+                    text-transform: uppercase;
+                    font-weight: 200;
+                    @include biggerPhone{
+                        @include fontSize(40px);
+                        @include letterSpacing(4px);
+                    }
+                    @include phone{
+                        @include fontSize(30px);
+                        @include letterSpacing(4px);
+                    }
+                    @include tablet{
+                        @include fontSize(48px);
+                        @include letterSpacing(4px);
+
+                    }
+                    a{
+                        display: flex;
+                        align-items: baseline;
+                        transition: color .3s ease;
+                        &:hover{
+                            @include hoverColorState;
+                            .navNumber{
+                                color: #111111;
+                                transition: color .3s ease;
+
+                            }
+                        }
+                        .navNumber{
+                            padding-right: 15px;
+                            font-family: 'Mark-Bold';
+                            @include fontSize(40px);
+                            letter-spacing: 0.2em;
+                            transition: color .3s ease;
+                            @include biggerPhone{
+                                padding-right: 10px;
+                                @include fontSize(20px);
+                                @include letterSpacing(2px);
+                            }
+                            @include tablet{
+                                @include fontSize(28px);
+                                @include letterSpacing(4px);
+        
+                            }
+                            } 
+                          }
+                     }
+                 }
+            }
+        }
+        .bottomSecondary{
+            padding: 1em 2em;
+            display: flex;
+            align-items: center;
+            @include phone{
+                padding: 1em 1.5em;
+            }
+            .scrollDirecion{
+                display: flex;
+                font-family: 'Mark-Bold';
+                @include letterSpacing(2px);
+                @include fontSize(12px);
+                flex: 1;
+                 
+            }
+            .socialContainer{
+                
+                display: flex;
+                flex: 1;
+                justify-content: flex-end;
+                .facebook{
+                    margin-right: 20px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                .instagram{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                                    }
+                             }
+                         }
+                    }
+                }
+            }
+.contentContainer{
+
+    flex-grow: 1;
+header{
+   
+.headerContainer{
+    padding: 1em 2em;
+    font-family: 'Mark-Bold';
+    letter-spacing: 0.2em;
+    z-index: 101;
+    position: fixed;
+    left: 0;
+    right: 0;
+    @include biggerPhone{
+        padding: 1em 1.5em;
+    }
+    @include tablet{ 
+        padding: 1em 1.5em;
+
+
+    }
+    .navigationWrapper{
+        display: flex;
+        align-items: center;
+        @include biggerPhone{
+            flex:1;
+        }
+        .navigationLogo{
+           flex:2;
+           @include biggerPhone{
+            flex:1;
+        }
+            img{
+                height: 40px;
+                @include biggerPhone{
+                    height: 35px;
+                }
+                @include phone{
+                    height: 30px;
+                }
+                @include tablet{
+                    height: 35px;
+                }
+            }
+
+        }
+        .navigationCategory{
+            flex:2;
+            @include biggerPhone{
+                flex:1;
+            }
+            .navigationInner{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @include biggerPhone{
+                    justify-content: flex-end;
+                }
+            .sandwichHolder{
+                flex:2;
+                @include biggerPhone{
+                    flex:none;
+                }
+                .menuSandwich{
+                    display: flex;
+                    align-items: center;
+                    max-width: 100px;
+                  
+                     .menuText{
+                        font-size: 14px;
+                        padding-bottom: 3px;
+                        @include biggerPhone{
+                            display:none;
+                        }
+                     }
+                    
+                .sandwich{
+                    padding-left: 5px;
+                    img{
+                        width: 40px;
+                        height: 40px;   
+                    }
+                }
+            }
+        }
+            .buttonMain{
+                @include biggerPhone{
+                    display: none;
+                }
+                @include tablet{ 
+                    display: none;
+
+                }
+                a{
+                    @include lineAnimateButton;
+                    padding: 6px 30px;
+                    margin-right: 30px;
+                }
+               
+            }
+           .languageHolder{
+               display: flex;
+               @include biggerPhone{
+                display: none;
+            }
+               .buttonLanguage{
+                padding: 10px;
+                text-align: center;
+                @include letterSpacing(3px);
+                font-family: 'Mark-Bold'; 
+                    span{
+                        width: 25px;
+                        display: flex;
+                        height: 10px;
+                        margin: 0;
+                        border-bottom: 2px solid #0093d8;
+                         }
+                    }
+                }
+            } 
+        }
+    }
+}    
+
+
+
+    }
+}
+
+/*----------footer holder wrapper----------------*/
+
+.footerContainer{
+    padding: 1.5em 2em;
+    background-color: black;
+    color: #f2f2f2;
+    @include biggerPhone{
+        padding: 3em 1em 1em 1em;
+    }
+    @include tablet{
+        padding: 3em 1em 1em 1em;
+    }
+    }
+
+}
+/*----------404 holder wrapper----------------*/
+
+.notFoundContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 92vh;
+    .notFoundInner{
+        width: 80%;
+        h1{
+            text-align: center;
+            @include fontSize(52px);
+            @include letterSpacing(3px);
+            font-family: 'Mark-Extralight'; 
+            text-transform: uppercase;
+            font-weight: 200;
+            line-height: 1.3em;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}

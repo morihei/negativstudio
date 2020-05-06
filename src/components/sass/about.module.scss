@@ -1,0 +1,404 @@
+@import 'mixins.scss';
+
+/*----------company holder wrapper----------------*/
+
+    .company{
+        padding-top: 8em;
+        background: #fafafa;
+        .quoteSection{
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+                .quoteWrapper{
+                    margin-left: 3em;
+                    margin-bottom: 8em;
+                    @include phone{
+                        margin-left: 2em; 
+                    }
+                    h1{
+                        @include fontSize(54px);
+                        @include letterSpacing(8px);
+                        font-family: 'Mark-Extralight'; 
+                        text-transform: uppercase;
+                        font-weight: 200;
+                    }
+
+                }
+    .headerWrapper{
+        .headerContainer{
+            display: flex;
+            justify-content: space-around;
+            .patternIcon{
+                flex: 1;
+                margin: auto;
+                span{
+                    margin:0 15px;
+                    background: no-repeat right url(../../images/icons/gradient-bullet.svg);
+                    height: 40px;
+                    display: flex;
+                    &.rightIcon{ 
+                        background-position: left;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+                flex: 4;
+                line-height: 1.5em;
+                @include biggerPhone{
+                    margin: 0;
+                    padding: 0;
+                    @include fontSize(20px);
+                    }
+                    @include tablet{
+                        @include fontSize(18px);
+                        line-height: 1.4em;
+                    }
+            }
+        }
+    }
+    .blockWrapper{
+        display: flex;
+        justify-content: space-around;
+         padding-top: 8em;
+         @include biggerPhone{
+            padding: 6em 1.5em 0 1.5em;
+            flex-direction: column;
+            @include paragraph-mobile; 
+         }
+        .blockDescription{
+            flex-basis: 40%;
+            max-width: 700px;
+            p{
+                @include tablet{
+                    @include fontSize(18px);
+                    line-height: 1.4em;
+                }
+                @include biggerPhone{
+                    @include fontSize(16px);
+                }
+                @include fontSize(20px);
+                line-height: 1.5;
+            }
+        }
+    }
+        
+    .quoteSecondWrapper{
+        padding: 8em 3em 12em 3em;
+        @include biggerPhone{
+            padding: 8em 1.5em 12em 1.5em;
+            }
+            .quoteSecondContainer{
+                
+            p{
+                margin: 10px;
+                @include fontSize(48px);
+                @include letterSpacing(4px);
+                font-family: 'Mark-Extralight';
+                text-align: left;
+                line-height: 1.3em;
+                @include biggerPhone{
+                @include fontSize(44px);
+                    
+                    }
+                    @include phone{
+                        @include fontSize(24px);
+                    }
+                &.bolderPromo{
+                    font-family: 'Mark-Medium';
+                    .purpleText{
+                        color: #da2a8f;
+                            }
+                       }
+                       .yellowText{
+                        font-family: 'Mark-Medium';
+                        color: #fde000;
+                        }
+                  }
+             }
+         }
+    }
+
+}
+/*----------author holder wrapper----------------*/
+.author{
+    .authorHeader{
+        display: flex;
+        .authorName{
+        display: flex;
+        padding: 10em 0em 6em 1.5em;
+        @include biggerPhone{
+            padding: 6em 1.5em 3em 1.5em;
+            }
+            .patternIcon{
+                margin-right: 5px;
+                background: no-repeat center url(../../images/icons/gradient-bullet.svg);
+                 width: 45px;
+                 @include biggerPhone{
+                    width: 60px;
+                    margin-right: 10px;
+                    }
+                }
+                    h2{
+                        font-family: 'Mark-Medium';  
+                        @include fontSize(28px);
+                        @include letterSpacing(3px);
+                        text-transform: uppercase;
+                        
+                        @include biggerPhone{
+                            @include fontSize(20px);
+                        @include letterSpacing(2px);
+                          
+                            }
+                            @include tablet{
+                                @include fontSize(20px);
+                            @include letterSpacing(2px);
+                              
+                                }
+                    }
+            }
+    }
+    .authorDescription{
+        padding: 0 2em 10em;
+        display: flex;
+        justify-content: space-around;
+        @include biggerPhone{
+            flex-direction: column;
+            padding: 0 1.5em 6em;
+            }
+            @include tablet{
+                
+                padding: 0 1.5em 6em;
+                }
+        .imageHolder{
+            flex-basis: 45%;
+            @include biggerPhone{
+                padding-bottom: 3em;
+                }
+        }
+        .description{
+            flex-basis: 45%;
+            h1{
+                @include fontSize(64px);
+                @include letterSpacing(3px);
+                font-family: 'Mark-Extralight';
+                text-align: left;
+                line-height: 1.3em;
+                font-weight: 200;
+                text-transform: uppercase;
+                @include biggerPhone{
+                @include fontSize(54px);
+                line-height: 1.2em;
+                    
+                    }
+                    @include tablet{
+                        @include fontSize(54px);
+                        line-height: 1.2em;
+                            
+                            }
+            }
+            .aboutMe{
+                p{
+                    margin-bottom: 4em;
+                    @include fontSize(20px);
+                    line-height: 1.5;
+                    @include biggerPhone{  
+                        @include paragraph-mobile; 
+                     }
+                     @include tablet{
+                       @include fontSize(18px);
+                       line-height: 1.4em;
+                     }
+                     
+                }
+            }
+            .buttonMain{
+                display: flex;
+                @include biggerPhone{
+                    @include buttonMainBigMobile;  
+                    }
+                    a{
+                        @include tablet{
+                            padding: 15px 90px;
+                        }
+                    @include lineAnimateButton;
+                }
+            }
+        }
+    }
+
+}
+
+/*----------client list holder wrapper----------------*/
+.clientList{
+    .clientListWrapper{
+        padding: 6em 0 3em 0;
+        @include tablet{
+            padding: 6em 0 0 0;  
+        }
+    h2{
+        margin-left: 1em;
+        font-family: 'Mark-Medium';  
+        @include fontSize(28px);
+        @include letterSpacing(3px);
+        text-transform: uppercase;
+        @include biggerPhone{
+            @include fontSize(20px);
+        @include letterSpacing(2px);
+          margin: 0;
+          text-align: center;
+            }
+            @include tablet{
+                @include fontSize(20px);
+            @include letterSpacing(2px);
+              
+                }
+    }
+    ul{
+        margin: 0;
+        padding: 6em;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        @include biggerPhone{
+            padding: 6em 1.5em 4em 1.5em;
+          
+            }
+            @include tablet{
+                padding: 6em 0 0em 0;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        li{
+           margin: auto;
+           @include tablet{
+            flex-basis: 50%;
+        }
+            .listElementContainer{
+                padding-bottom: 7em;
+                display: flex;
+                flex-direction: column;
+                @include biggerPhone{    
+                    padding-bottom: 4em;
+                    }
+                    
+                .hotelName{
+                    background: no-repeat center url(../../images/icons/valamar.png);
+                    background-size: cover;
+                    width: 120px;
+                    height: 110px;
+                    margin: auto;
+                }
+                .hotelNameSecond{
+                    background: no-repeat center url(../../images/icons/milenij.png);
+                    background-size: cover;
+                    width: 155px;
+                    height: 115px;
+                    margin: auto;
+                }
+                .vilaName{
+                    background: no-repeat center url(../../images/icons/villa.svg);
+                    width: 100px;
+                    height: 90px;
+                    margin: auto;
+                }
+                    h3{
+                        margin-bottom: 25px;
+                        @include fontSize(20px);
+                        @include letterSpacing(2px);
+                        text-transform: uppercase;
+                        text-align: center;
+                        @include biggerPhone{
+                            @include fontSize(16px); 
+                        }
+                    }
+                
+                }
+
+            }
+        }
+    }
+    .adriaticHolderInfo{
+        display: flex;
+        align-items: flex-end;
+        height: 60vh;
+        @include biggerPhone{
+            margin-top: 13em;
+        }
+        p{
+            padding: 2em;
+             line-height: 2.2em;
+            @include fontSize(16px);
+        }
+    }
+}
+/*----------adriatic holder wrapper----------------*/
+.adriatic{
+
+    .adriaticHolder{
+        padding-top: 4em;
+        padding-bottom: 12em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include biggerPhone{
+            padding: 0;
+        }
+        @include tablet{
+        padding-bottom: 6em;
+
+        }
+        h2{
+            padding-bottom: 2em;
+            font-family: 'Mark-Medium';  
+            @include fontSize(28px);
+            @include letterSpacing(3px);
+            text-transform: uppercase;
+            @include biggerPhone{
+                margin: 0;
+                text-align: center;
+                @include fontSize(20px);
+            @include letterSpacing(2px);
+                }
+                @include tablet{
+                    padding: 1.5em;
+                    @include fontSize(20px);
+                @include letterSpacing(2px);
+                  
+                    }
+        }
+        p{
+            padding: 1.5em 1em;
+            margin: 0 150px;
+            text-align: center;
+            @include tablet{
+                margin: 0px 80px;
+                @include fontSize(18px);
+                line-height: 1.4em;
+            }
+            @include biggerPhone{
+                margin: 0;
+                padding: 1.5em;
+                @include paragraph-mobile; 
+                 }
+                
+            }
+        }
+        .conclusion{
+            p{
+                margin-top: 7em;
+                @include fontSize(20px);
+                line-height: 1.5em;
+                @include tablet{
+                    margin-top: 4em;
+                    @include fontSize(18px);
+                    line-height: 1.4em;
+                }
+                @include biggerPhone{
+                    @include fontSize(16px);
+                }
+            }
+        }
+     
+}
+

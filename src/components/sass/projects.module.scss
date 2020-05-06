@@ -1,0 +1,296 @@
+@import 'mixins.scss';
+
+.lightBoxContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-auto-rows: minmax(150px,auto);
+    grid-gap: 15px;
+    @include biggerPhone{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-rows: minmax(90px, auto);
+        grid-gap: 10px;
+    }
+    @include tablet{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 15px;
+    }
+    a{
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;       
+         outline: none;
+       img{
+        transform: scale(1);
+        transition: transform 3000ms ease-in-out !important;
+        
+        &:hover{
+            transform: scale(1.2);
+            transition: transform 3000ms ease-in-out !important;
+            
+        }
+       }
+    }
+}
+.lightBoxBackground{
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(250, 250, 250, 0.6);
+    .lightBoxBackgroundInner{
+        display: flex;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        border: 0px;
+        outline: none;
+        margin: auto;
+        justify-content: center;
+         align-items: center;
+        height: 100vh;
+        
+        .lightBoxBackgroundWrapper{
+            flex: 1;
+           
+        .buttonHolder{
+           position: absolute; 
+           top: 20px;
+           right: 30px;
+           display: inline;
+           a{
+            display: flex;
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer; 
+            align-items: center;
+            color: #111111;
+            font-family: 'Mark-Bold';
+            @include fontSize(12px);
+             @include letterSpacing(2px);
+             text-transform: uppercase;
+            span{
+                width: 40px;
+                height: 40px;
+                background: no-repeat center url(../../images/icons/close.svg);
+
+            }
+           }
+              }
+         }
+    }
+}
+/*----------projects holder wrapper----------------*/
+
+.projectOne{
+    padding-top: 8em;
+    background: #fafafa;
+    .quoteWrapper{
+        margin-left: 3em;
+        margin-bottom: 8em;
+        h1{
+            @include fontSize(54px);
+            @include letterSpacing(8px);
+            font-family: 'Mark-Extralight'; 
+            text-transform: uppercase;
+            font-weight: 200;
+        }
+
+    }
+    .year{
+        padding-left: 30px;
+        font-family: 'Mark-Medium';
+        @include letterSpacing(2px);
+        @include fontSize(14px);
+        @include biggerPhone{
+            padding-left:25px;
+        }
+    }
+    .projectWrapper{
+        padding: 1em 2em 4em 2em;
+             @include biggerPhone{
+                  padding: 1em 1.5em 4em 1.5em;
+
+        }
+        .recentHeader{
+            display: flex;
+            flex-direction: column;
+            .headerName{
+                display: flex;
+                align-items: center;
+                .patternIcon{
+                    margin-right: 15px;
+                    background: no-repeat center url(../../images/icons/gradient-bullet.svg);
+                     width: 45px;
+                     height: 40px;
+                }
+                h2{
+                    font-family: 'Mark-Medium';  
+                    @include fontSize(24px);
+                    @include letterSpacing(2px);
+                    @include biggerPhone{
+                        @include fontSize(20px);
+                      
+                        }
+                }
+            }
+            p{
+                margin: 10px 3.1em;
+                @include fontSize(20px);
+                @include biggerPhone{
+                    margin-right: 0;
+                    @include paragraph-mobile;
+                }
+            }
+        }
+        .imageWrapper{
+            padding: 12em 4em 21em 4em;
+            @include biggerPhone{
+                padding: 5em 0em 8em 0em;
+                border: 0;
+                margin: 0;
+            }
+            margin-left: 20px;
+            margin-top: -4em;
+            border-left: 2px solid #111111;
+            display: flex;
+            flex-direction: column;
+         
+        }
+    }
+        
+}
+.projectTwo, .projectThree, .projectFour, .projectFive, .projectSix{
+    background: #fafafa;
+    margin-top: -35px;
+    .quoteWrapper{
+        margin-left: 3em;
+        margin-bottom: 8em;
+        h1{
+            @include fontSize(54px);
+            @include letterSpacing(8px);
+            font-family: 'Mark-Extralight'; 
+            text-transform: uppercase;
+            font-weight: 200;
+        }
+
+    }
+    .year{
+        padding-left: 30px;
+        font-family: 'Mark-Medium';
+        @include letterSpacing(2px);
+        @include fontSize(14px);
+        @include biggerPhone{
+            padding-left:25px;
+        }
+    }
+    .projectWrapper{
+        padding: 1em 2em 4em 2em;
+        @include biggerPhone{
+            padding: 1em 1.5em 4em 1.5em; 
+        }
+        .recentHeader{
+            display: flex;
+            flex-direction: column;
+            .headerName{
+                display: flex;
+                align-items: center;
+                .patternIcon{
+                    margin-right: 15px;
+                    background: no-repeat center url(../../images/icons/gradient-bullet.svg);
+                     width: 45px;
+                     height: 40px;
+                }
+                h2{
+                    font-family: 'Mark-Medium';  
+                    @include fontSize(24px);
+                    @include letterSpacing(2px);
+                    @include biggerPhone{
+                        @include fontSize(20px);
+                      
+                        }
+                }
+            }
+            p{
+                margin: 10px 3.1em;
+                @include fontSize(20px);
+                @include biggerPhone{
+                    margin-right: 0;
+                    @include paragraph-mobile;
+                }
+            }
+        }
+        .imageWrapper{
+            padding: 12em 4em 21em 4em;
+            @include biggerPhone{
+                padding: 5em 0em 8em 0em;
+                border: 0;
+                margin: 0;
+            }
+            margin-left: 20px;
+            margin-top: -4em;
+            border-left: 2px solid #111111;
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+        
+}
+.backtoTop{
+    background: #fafafa;
+    margin-top: -35px;
+    padding-bottom: 2em;
+    @include biggerPhone{
+        &:first-of-type{
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .backtoWrapper{
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        cursor: pointer;
+        width: 200px;
+       
+        .topIcon{
+            margin-right: 15px;
+            background: no-repeat center url(../../images/icons/backtop.svg);
+             width: 45px;
+             height: 40px;
+             animation-name: topPosition;
+	         animation-duration: .8s;
+	         animation-iteration-count: infinite;
+             animation-direction: alternate;
+             animation-timing-function: ease-in-out; 
+             animation-delay: 0;
+        @keyframes topPosition {
+            from { background-position-y: 6px; }
+            to { background-position-y: 0px; }
+          }
+        }
+        h4{
+            font-family: 'Mark-Bold';
+            @include fontSize(12px);
+            @include letterSpacing(2px);
+        }
+    }
+}
+
+
+

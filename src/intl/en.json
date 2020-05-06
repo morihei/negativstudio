@@ -1,0 +1,107 @@
+{
+    "seo_home": "Home Page",
+    "seo_contact": "Contact Page",
+    "seo_about": "About Us Page",
+    "seo_projects": "Projects Page",
+    "quote": "You don't take a photograph, {br}you make it!",
+    "quote_author": " - Ansel Adams", 
+    "what_is": "What is Negativ Studio?<span> What is Negativ Studio?</span> What is Negativ Studio? What is Negativ Studio?",
+    "what_description": "Located in the heart of the Mediterranean,<span> Negativ Studio</span> is an real estate photography professional that can help you with your property rating boost.",
+    "what_description_second": "By using the latest trends in light and interior photography we are here to take your property to the next level on the market.",
+    "link_about":"More about us",
+    "link_projects":"Check projects",
+    "link_contact":"Let's talk",
+    "did_you_know":"DID YOU KNOW HOMES WITH PROFESSIONAL PHOTOS GET 61% MORE VIEWS? DID YOU KNOW HOMES WITH PROFESSIONAL PHOTOS GET 61% MORE VIEWS? ",
+    "did_you_know_second":"  DID YOU KNOW HOMES WITH PROFESSIONAL PHOTOS GET <span>61% MORE VIEWS?</span> DID YOU KNOW HOMES WITH PROFESSIONAL PHOTOS GET 61% MORE VIEWS? ",
+    "recent":"Recent Shoots",
+    "see_all":"See All",
+    "snaps":"Fresh snaps of our newest projects",
+    "stanger":"Villa Stanger",
+    "stanger_desc":"A unique mediteranean style of blend with nature",
+    "how":"How we do, what we do? <span>How we do, what we do? </span>How we do, what we do? How we do, what we do?",
+    "how_desc":"With advance in aeral and camera technology our state of the art devices deliver you the {br} highest image quality possible on the market!",
+    "drone":"DRONE",
+    "drone_desc":"The areal scenery is cruised by the latest drone technology on the market.",
+    "camera":"CAMERA",
+    "camera_desc":"Our latest SLR Cannon cameras equipped with all ranges of lenses are ready even for the most demanding scenery.  ",
+    "lights":"LIGHTS",
+    "lights_desc":"Without a proper light there is no quality photo. We have studio lights that can lift the interior quality to impress any client.  ",
+    "convinced":"ARE YOU CONVINCED ALREADY? <span>ARE YOU CONVINCED ALREADY?</span> ARE YOU CONVINCED ALREADY? ARE YOU CONVINCED ALREADY?",
+    "convinced_desc":"By providing a professional service that lasts for digital years, we guarantee your real estate {br}will be pushed out on the market for everybody to see.",
+    "notfound": {
+      "title": "NOT FOUND", 
+      "description": "NEGATIV STUDIO IS NOT HERE.{br} GO BACK!",
+      "paragraph": "You just hit a route that does not exist... the sadness."
+    },
+    "navigation":{
+      "work": "Our Work",
+      "about_us": "About the studio",
+      "contact_us": "Get in Touch"
+
+    },
+    "header":{
+      "reachme": "Contact me"
+
+    },
+    "footer":{
+      "legal":"Legal Notices",
+      "work": "Done Work",
+      "about_us": "About the studio",
+      "contact_us": "Get in touch"
+
+    },
+    "projects":{
+      "backto": "BACK TO TOP",
+      "ourshoots":"Our Shoots",
+      "project-one": "A new jewel in the Kvarner bay overlooking the whole Adriatic coastline",
+      "project-two": "In the Continental part of Croatia just 50km from the Adriatic Sea lays a residence suitable even for the most demanding trekker.",
+      "project-three": "A new jewel in the Kvarner bay overlooking the whole Adriatic coastline",
+      "project-four": "A new jewel in the Kvarner bay overlooking the whole Adriatic coastline",
+      "project-five": "A new jewel in the Kvarner bay overlooking the whole Adriatic coastline",
+      "project-six": "A new jewel in the Kvarner bay overlooking the whole Adriatic coastline"      
+
+    },
+    "about":{
+      "quote": "SO YOU WANNA KNOW MORE?",
+      "quote-two":"MAKES SENSE",
+      "hero-one": "You want your real estate to hit the most wanted list? Don’t worry that’s what we do best.",
+      "description-one": "Negative studio is a professional photographer sudio for interior and exterior photography.",
+      "description-two": " Many years of education and experience have led us to proudly call ourselves professional. Our most frequent clients are renowned hotel houses, architects, interior designers, holiday villas and apartments.",
+      "description-one-right": "The purpose of photography can be to rent, sell and present various architectural or design solutions.",
+      "description-two-right": " We approach each project individually and with dedication whether it is demanding for us or not. We are guided through photography not only to show what we see, but to try to convey emotion ....",
+      "life": "LIFE IS LIKE A CAMERA",
+      "focus": "FOCUS ON WHAT’S IMPORTANT,",
+      "capture": "CAPTURE THE GOOD TIMES",      
+      "develop": "DEVELOP FROM THE NEGATIVES",      
+      "things": "AND IF THINGS DON’T WORK OUT,",      
+      "shot": "TAKE ANOTHER SHOT",      
+      "professional": "Your professional of choice",      
+      "oliver": "Hi I'm Oliver!",      
+      "description-three": "Oliver has been in the photography since the days he started talking and said his first words; “canon!",      
+      "description-four": "As a young boy he started to be curious about life through a lense when he saw the first negatives come to life in that old red room. Nothing was the same again! The way to store moments in time made him only progress further with passion more and more every day." ,   
+      "link-contact":"Let's talk",
+      "clients":"Some Clients",
+      "location":"Why invest in professional photography of your property?",
+      "answer-one":"Precisely because there's only one photo between you and the potential buyer or renter!",
+      "answer-two":"You have only one chance to make a first impression!",
+      "answer-three":"Guests and buyers spend more than 60% browsing images of real estate, rooms, villas for rent or purchase.",
+      "answer-four":"Real estate with professional photographs earn 118% more views and earn 47% more profit than real estate that have not invested in this purpose.",
+      "conclusion":"These are just some of the reasons why you should only use the services of professional photographers. {Br} Feel free to contact us, ask, ask for a quote or advice. {Br} We are at your disposal."
+
+    },
+    "contact":{
+      "quote": " What did you have in mind?",
+      "name":"I am",
+      "send-it": "Send it",
+      "mail": "My email is",
+      "subject": "It's about",
+      "message": "The message is",
+      "error": "Ooops! There was an error.",
+      "phone": "You can drop us a text, call, voice mail or just save our contact"
+    },
+    "lightbox":{
+      "close": " Close"
+      
+    }
+    
+  } 

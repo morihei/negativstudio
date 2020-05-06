@@ -1,0 +1,495 @@
+/*----------contact holder wrapper----------------*/
+.contact .imageHolder {
+  height: 92vh;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1111px) {
+  .contact .imageHolder {
+    height: 100%;
+  }
+}
+
+.contact .imageHolder .quoteSection {
+  padding-top: 8em;
+  height: 88%;
+}
+
+@media (min-width: 768px) and (max-width: 1111px) {
+  .contact .imageHolder .quoteSection {
+    padding-bottom: 3em;
+  }
+}
+
+.contact .imageHolder .quoteSection .quoteWrapper {
+  margin-left: 3em;
+}
+
+.contact .imageHolder .quoteSection .quoteWrapper h1 {
+  font-size: 3.375rem;
+  letter-spacing: 0.5rem;
+  font-family: 'Mark-Extralight';
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.contact .imageHolder .quoteSection .formWrapper {
+  padding: 0 2em;
+  height: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 1.5em;
+    padding-bottom: 4em;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1200px;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .formContainer .formInner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock label p {
+  font-family: 'Mark-Medium';
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button {
+  font-family: 'Mark-Bold';
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 120px;
+  border: 2px solid rgba(17, 17, 17, 0.3);
+  position: relative;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+  padding: 15px 120px;
+  font-family: 'Mark-Bold';
+  font-size: 0.875rem;
+  letter-spacing: 0.1875rem;
+  display: flex;
+  background: none;
+  outline: none;
+  color: #0093d8;
+  background: transparent;
+  border: 2px solid #0093d8;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button img {
+  width: 35px;
+  height: 35px;
+  padding-right: 10px;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button .buttonText {
+  text-transform: uppercase;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button:hover {
+  border: 2px solid rgba(17, 17, 17, 0);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #0093d8;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button:before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 3px solid transparent;
+  left: -3px;
+  bottom: -1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button:hover:before {
+  height: 104%;
+  width: 101%;
+  border: 3px solid #0093d8;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transition: height .2s ease-in-out, width .3s ease-in-out .2s;
+  transition: height .2s ease-in-out, width .3s ease-in-out .2s;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button:after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 3px solid transparent;
+  top: 0px;
+  right: -2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button:hover:after {
+  height: 102%;
+  width: 101%;
+  border: 3px solid #0093d8;
+  border-left: none;
+  border-top: none;
+  -webkit-transition: height .2s ease-in-out, width .3s ease-in-out .2s;
+  transition: height .2s ease-in-out, width .3s ease-in-out .2s;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button:hover {
+  cursor: pointer;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button .centerBlock {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button .centerBlock img {
+  width: 35px;
+  height: 35px;
+  padding-right: 10px;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlock .buttonMain button .centerBlock .buttonText {
+  text-transform: uppercase;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner input {
+  -webkit-transition: border 300ms ease-in-out;
+  transition: border 300ms ease-in-out;
+  padding: 0.5em 1em;
+  background: none;
+  border-bottom: 2px solid #111111;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+  outline: none;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner input:hover {
+  border-bottom: 2px solid #0093d8;
+  -webkit-transition: border 300ms ease-in-out;
+  transition: border 300ms ease-in-out;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner input:focus {
+  border-bottom: 2px solid #0093d8;
+  -webkit-transition: border 300ms ease-in-out;
+  transition: border 300ms ease-in-out;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .formContainer .formInner input {
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlockRight {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlockRight label {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlockRight label textarea {
+  -webkit-transition: border 300ms ease-in-out;
+  transition: border 300ms ease-in-out;
+  height: 234px;
+  padding: 1em;
+  outline: none;
+  resize: none;
+  background: none;
+  border: 2px solid #111111;
+  font-size: 1.25rem;
+  letter-spacing: 0.0625rem;
+  overflow: hidden;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlockRight label textarea:hover {
+  border: 2px solid #0093d8;
+  -webkit-transition: border 300ms ease-in-out;
+  transition: border 300ms ease-in-out;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlockRight label textarea:focus {
+  border: 2px solid #0093d8;
+  -webkit-transition: border 300ms ease-in-out;
+  transition: border 300ms ease-in-out;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlockRight label textarea {
+    padding: 1em;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1111px) {
+  .contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlockRight label textarea {
+    height: 215px;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlockRight label p {
+  margin-bottom: 59px;
+  font-family: 'Mark-Medium';
+  font-size: 1.375rem;
+  letter-spacing: 0.125rem;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .formContainer .formInner .formBlockRight label p {
+    margin-bottom: 35px;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .buttonMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5em;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .buttonMain a {
+  font-family: 'Mark-Bold';
+  font-size: 0.875rem;
+  letter-spacing: 0.1875rem;
+  color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 120px;
+  background-color: #0093d8;
+  border: 2px solid #0093d8;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .buttonMain a img {
+  width: 35px;
+  height: 35px;
+  padding-right: 10px;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .buttonMain a .buttonText {
+  text-transform: uppercase;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .buttonMain {
+    position: absolute;
+    bottom: -8em;
+    right: 0;
+    left: 0;
+  }
+  .contact .imageHolder .quoteSection .formWrapper .buttonMain button {
+    padding: 15px 65px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1111px) {
+  .contact .imageHolder .quoteSection .formWrapper .buttonMain button {
+    padding: 15px 65px !important;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .phoneWrapper {
+  padding: 5em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .phoneWrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 4em;
+    padding-top: 14em;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .phoneWrapper .phoneInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .phoneWrapper .phoneInner p {
+  font-family: 'Mark-Medium';
+  font-size: 1.375rem;
+  letter-spacing: 0.125rem;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .phoneWrapper .phoneInner p {
+    font-size: 1.125rem;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .phoneWrapper .phoneInner .phoneInfo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.1875rem;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .phoneWrapper .phoneInner .phoneInfo a {
+    font-size: 1.125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 35px;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .phoneWrapper .phoneInner .phoneInfo a img {
+  margin-right: 20px;
+  height: 45px;
+  border-radius: 110px;
+  padding: 10px;
+  border: 2px solid rgba(17, 17, 17, 0.3);
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .phoneWrapper .phoneInner .phoneInfo a img {
+    margin: 0 0 35px 0;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .phoneWrapper .socialContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 766px) {
+  .contact .imageHolder .quoteSection .formWrapper .phoneWrapper .socialContainer {
+    display: none;
+  }
+}
+
+.contact .imageHolder .quoteSection .formWrapper .phoneWrapper .socialContainer .facebook {
+  margin-right: 20px;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .phoneWrapper .socialContainer .facebook img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact .imageHolder .quoteSection .formWrapper .phoneWrapper .socialContainer .instagram img {
+  width: 40px;
+  height: 40px;
+}
+/*# sourceMappingURL=contact.module.min.css.map */

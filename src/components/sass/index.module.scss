@@ -1,0 +1,673 @@
+@import 'mixins.scss';
+
+/*----------lightbox holder wrapper----------------*/
+@-moz-document url-prefix() {
+    .lightBoxBackgroundWrapper{
+
+        .buttonHolder{
+
+            top:55px !important;
+        }
+    }
+  }
+
+.lightBoxContainer{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, calc(50% - 20px * 2)) 10px;
+    grid-template-rows: minmax(150px, 1fr);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    @include biggerPhone{
+        display: flex;
+    }
+    &::-webkit-scrollbar{
+        display: none;
+        width: 0px;  /* Remove scrollbar space */
+        background: transparent;
+    }
+    &:after{
+
+        content: '';  
+
+    }
+    a{
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;       
+         outline: none;
+         @include phone{
+            div{
+                width: 250px !important;
+                margin-right: 15px;
+            } 
+         }
+         @include biggerPhone{
+            div{
+                width: 325px;
+                margin-right: 25px;
+            }
+        }
+         img{
+            transform: scale(1);
+            transition: transform 3000ms ease-in-out !important;
+            
+            &:hover{
+                transform: scale(1.2);
+                transition: transform 3000ms ease-in-out !important;
+                
+            }
+           }
+    }
+}
+.lightBoxBackground{
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(250, 250, 250, 0.6);
+   
+    .lightBoxBackgroundInner{
+        display: flex;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        border: 0px;
+        outline: none;
+        margin: auto;
+        justify-content: center;
+         align-items: center;
+        height: 100vh;
+        
+        .lightBoxBackgroundWrapper{
+            flex: 1;
+           
+        .buttonHolder{
+           position: absolute; 
+           top: 20px;
+           right: 30px;
+           display: inline;
+           @include biggerPhone{
+            right: 15px;
+           }
+          
+           a{
+            display: flex;
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer; 
+            align-items: center;
+            color: #111111;
+            font-family: 'Mark-Bold';
+            @include fontSize(12px);
+             @include letterSpacing(2px);
+             text-transform: uppercase;
+            span{
+                width: 40px;
+                height: 40px;
+                background: no-repeat center url(../../images/icons/close.svg);
+
+            }
+           }
+              }
+         }
+    }
+}
+/*----------image holder wrapper----------------*/
+
+ 
+.headerIntro{
+    .imageHolder{
+        width: 100%;
+        height: 100vh;
+        .headerWrapper{
+            display: flex;
+            height: 99vh;
+            align-items: flex-end;
+            .quoteMain{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                .quoteWrapper{
+                    margin-left: 3em;
+                    margin-bottom: 8.375em;
+                    @include biggerPhone{
+                        margin-left: 0;
+                        text-align: center;
+                        padding: 1.5em;
+                        margin-bottom: 5em;
+                    }
+                    h1{
+                        @include fontSize(60px);
+                        @include letterSpacing(8px);
+                        font-family: 'Mark-Extralight'; 
+                        text-transform: uppercase;
+                        font-weight: 200;
+                        @include biggerPhone{
+                            @include fontSize(35px);
+                            @include letterSpacing(4px);
+                        }
+                        @include phone{
+                            @include fontSize(25px);
+                            @include letterSpacing(4px);
+                        }
+                    }
+                    h4{
+                    padding-top: 10px;
+                    font-family: 'Mark-Bold-Italic'; 
+                    @include letterSpacing(2px);
+                    @include fontSize(22px);
+                    @include biggerPhone{
+                        @include fontSize(16px);
+                        @include letterSpacing(2px);
+                    }
+                    }
+                }
+                .bottomSecondary{
+                    padding: 1em 2em;
+                    display: flex;
+                    align-items: center;
+                    @include biggerPhone{
+                        position: relative;
+                        justify-content: center;
+
+                    }
+                    .scrollDirecion{
+                        display: flex;
+                        font-family: 'Mark-Bold';
+                        @include letterSpacing(3px);
+                        @include fontSize(14px);
+                        margin-bottom: 45px;
+                        margin-left: -30px;
+                        @include rotate(-90deg);
+                        position: relative;
+                        bottom: 30px;
+                        left: 1.5em;
+                        @include biggerPhone{
+                            justify-content: center;
+                            @include fontSize(12px);
+                            @include letterSpacing(2px);
+                        }
+                        
+                        .scrollLine{
+                            @include biggerPhone{
+                                height: 7px;
+                                position: absolute;
+                                bottom: 4px;
+                                right: 35px;
+                                @include scrollAnimation;
+
+                            } 
+                            width: 30px;
+                            border-bottom: 3px solid black;
+                            height: 9px; 
+                            position: absolute;
+                            left: -46px;
+                            @include scrollAnimationDesktop;
+                        }
+                    }
+                    .socialContainer{
+                        @include biggerPhone{
+                            display: none;
+                        }
+                        display: flex;
+                        flex: 1;
+                        justify-content: flex-end;
+                        .facebook{
+                            margin-right: 20px;
+                            img{
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                        .instagram{
+                            img{
+                                width: 40px;
+                                height: 40px;
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+
+    }
+}
+/*----------what is holder wrapper----------------*/
+.whatIs{
+    background-color: #fafafa;
+    overflow: hidden;
+    h1{
+        @include biggerPhone{
+            
+            @include h1-tags-mobile;
+            }
+            @include tablet{
+                margin-left: -46rem;
+            }
+        width: 550%;
+        margin-left: -35rem;
+        @include h1-tags;
+        span{
+            color: #01177a;
+        }
+    }
+    p{
+        @include biggerPhone{
+            margin: 0;
+            padding: 1.5em;
+            @include paragraph-mobile;  
+            }
+            @include tablet{
+                @include paragraph-tablet;
+                
+            }
+        @include centeredParagraph;
+        .strongText{
+            font-family: 'Mark-Medium';
+        }
+    }
+    .whatIsHolder{
+        p{
+                padding-bottom: 25em;  
+            }
+            .buttonMain{
+                margin: 100px;
+                justify-content: space-around;
+                display: flex;
+                //@include buttonMainBig;
+                @include biggerPhone{
+                    @include buttonMainBigMobile;  
+                    }
+                a{
+                    @include lineAnimateButton;
+                }
+    
+            }
+        }
+    
+            .didYou{
+                padding-top: 3em;
+                width: 550%;
+                @include biggerPhone{
+                    padding-top: 6em;
+                    width: 1000%;
+                }
+                @include tablet{
+                    width: 1000%;
+                }
+                p{
+                    @include tablet{
+                        @include fontSize(40px);
+                        
+                    }
+                    @include biggerPhone{
+                        margin: 0;
+                        padding: 5px;
+                        @include fontSize(40px);
+                        }
+                    margin: 10px;
+                    @include fontSize(48px);
+                    @include letterSpacing(4px);
+                    font-family: 'Mark-Extralight';
+                    text-align: left;
+                    line-height: 1.3em;
+                    &.bolderPromo{
+                        font-family: 'Mark-Medium';
+                        margin-left: -49rem;
+                        .purpleText{
+                            color: #da2a8f;
+                        }
+    
+                    }
+                }
+            }
+
+}
+/*----------recent holder wrapper----------------*/
+.recentWork{
+    background-color: #fafafa;
+    .recentWrapper{
+        padding: 15em 2em 4em 2em;
+        @include biggerPhone{
+            padding :10em 1.5em 4em 1.5em;
+
+            }
+        .recentTop{
+            display: flex;
+            .recentHeader{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                .headerName{
+                    display: flex;
+                .patternIcon{
+                    margin-right: 5px;
+                    background: no-repeat center url(../../images/icons/gradient-bullet.svg);
+                    width: 45px;
+                    @include biggerPhone{
+                        width: 60px;
+                        margin-right: 10px;
+                        }
+                 }
+            h2{
+            
+            font-family: 'Mark-Medium';  
+            @include fontSize(28px);
+            @include letterSpacing(2px);
+            @include biggerPhone{
+                @include fontSize(20px);
+              
+                }
+                 }
+            }
+        }
+    }
+            p{
+                @include biggerPhone{
+                   display: none;
+                   
+                    }
+                margin: 10px 25px;
+                padding-left: 1.4em;
+                @include fontSize(20px);
+            }
+    .seeAll{
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+        a{
+            display: flex;
+            &:hover{
+                h5{
+                    @include hoverColorState;
+
+                }
+                
+            }
+        h5{
+            font-family: 'Mark-Bold'; 
+            @include letterSpacing(2px);
+            @include fontSize(18px);
+             transition: color .3s ease;
+             @include biggerPhone{
+                @include letterSpacing(2px);
+            @include fontSize(16px);
+                }
+
+        }
+        .seeIcon{
+            margin-top: -15px;
+            background: no-repeat url(../../images/icons/all.svg);
+            width: 35px;
+            height: 50px;
+            background-size: cover;
+            @include biggerPhone{
+                height: 48px;
+                }
+
+          }
+        }
+    }
+}
+.recentProject{
+        margin-left: 5em;
+        padding-bottom: 3em;
+        @include biggerPhone{
+            margin-left: 1.5em;
+            padding-bottom: 0;
+            }
+        .recentHolder{
+            overflow-y: hidden;
+            margin-bottom: calc(-.1 * 20px);
+        }
+      
+  
+}
+    .projectInfo{
+        padding: 1em 0 11em 5em;
+        @include biggerPhone{
+            padding: 6em 1.5em 6em 1.5em;
+         
+         }
+        .projectHeader{
+            display: flex;
+            flex-direction: column;
+            .projectName{
+                display: flex;
+                align-items: center;
+                @include biggerPhone{
+                   flex-direction: column;
+                   padding-bottom: 1em;
+                   
+             }
+             .projectIcon{
+                margin-right: 5px;
+                 background: no-repeat center url(../../images/icons/villa.svg);
+                  width: 45px;
+                  height: 40px;
+                  @include biggerPhone{
+                    margin: 0;
+                    height: 55px;
+                    
+              }
+        }
+        h2{
+            font-family: 'Mark-Medium';  
+            @include fontSize(24px);
+            @include letterSpacing(2px);
+
+                @include biggerPhone{
+                    @include fontSize(20px);
+                    @include letterSpacing(2px);
+             }
+        }
+    }
+
+        p{
+            margin: 5px 25px;
+            padding-left: 1.4em;
+            @include fontSize(20px);
+            @include biggerPhone{
+                @include paragraph-mobile;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+         }
+        }
+    }    
+
+    }
+}
+/*----------how we holder wrapper----------------*/
+.howWe{
+    .howWeHolder{
+        overflow: hidden;
+        h1{
+            @include biggerPhone{
+            
+                @include h1-tags-mobile;
+                }
+                @include tablet{
+            margin-left: -50rem;
+
+                }
+            margin-left: -35rem;
+            width: 550%;
+            @include h1-tags;
+            span{
+                color: #038103;
+            }
+        }
+        p{
+            &:first-of-type{
+                @include tablet{
+                    @include paragraph-tablet;
+                    
+                }
+                @include biggerPhone{
+                    margin: 0;
+                    padding: 1.5em;
+                    @include paragraph-mobile;  
+                    }
+                padding-bottom: 10rem;
+                @include centeredParagraph;
+            }
+        }
+        .descriptionList{
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                @include biggerPhone{
+            
+                    padding: 6em 1.5em 0 1.5em;
+                    flex-direction: column;
+                    li{
+                        padding-bottom: 5em;
+                         
+                         }
+                    }
+                li{
+                    flex-basis: 25%;
+                    .listElementContainer{
+                        display: flex;
+                        flex-direction: column;
+                        span{
+                            &.drone{
+                            background: no-repeat center url(../../images/icons/drone.svg);
+
+                            }
+                            &.camera{
+                            background: no-repeat center url(../../images/icons/camera.svg);
+
+                            }
+                            &.lights{
+                                background: no-repeat center url(../../images/icons/lights.svg);
+    
+                           }
+                            min-width: 200px;
+                            height: 250px;
+                            margin: auto;
+                            @include biggerPhone{
+                                height: 120px;
+                                }
+                                @include tablet{
+                                    height: 100px;
+                                    }
+                        }
+                        h2{
+                            font-family: 'Mark-Medium'; 
+                            text-transform: uppercase;
+                            text-align: center;
+                            padding-top: 30px;
+                            padding-bottom: 25px;
+                            @include letterSpacing(3px);
+                            @include fontSize(28px);  
+                            @include biggerPhone{
+                                padding-bottom: 10px;
+                                @include letterSpacing(2px);
+                                @include fontSize(22px);  
+                                }
+                                @include tablet{
+                                    padding-bottom: 15px;
+                                    padding-top: 50px;
+                                    @include letterSpacing(2px);
+                                    @include fontSize(22px);  
+                                }
+                        }
+                        .textContainer{
+                           
+                            @include fontSize(20px);  
+                            line-height: 1.3;
+                            text-align: center;
+                            @include biggerPhone{
+                                @include fontSize(14px);  
+                                }
+                                @include tablet{
+                                    @include fontSize(16px); 
+                                    }         
+                        }
+                    }
+                }
+            }
+        }
+        .buttonMain{
+            margin: 100px;
+            justify-content: space-around;
+            display: flex;
+            @include biggerPhone{
+                @include buttonMainBigMobile;  
+                }
+            a{
+
+                @include lineAnimateButton;
+            }
+        }
+    }
+}
+/*----------convinced holder wrapper----------------*/
+.convinced{
+    .convincedHolder{
+        padding-bottom: 6rem;
+        overflow: hidden;
+        @include biggerPhone{
+                
+           padding-bottom: 3em;
+            }
+        h1{
+            @include biggerPhone{
+                
+                @include h1-tags-mobile;
+                }
+                @include tablet{
+            margin-left: -42rem;
+
+                }
+            margin-left: -35rem;
+            width: 550%;
+            @include h1-tags;
+            span{
+                color: #0093d8;
+            }
+        }
+        p{
+            @include tablet{
+                @include paragraph-tablet;
+                
+            }
+            @include biggerPhone{
+                margin: 0;
+                padding: 1.5em;
+                @include paragraph-mobile;  
+                }
+            @include centeredParagraph;
+
+        }
+        .buttonMain{
+            margin: 100px;
+            justify-content: space-around;
+            display: flex;
+            @include biggerPhone{
+                @include buttonMainBigMobileLast;  
+                }
+            a{
+                @include lineAnimateButton;
+                padding: 15px 153px;
+            }
+
+        }
+    }
+}

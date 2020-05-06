@@ -1,0 +1,427 @@
+.lightBoxContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 15px;
+}
+
+@media (max-width: 766px) {
+  .lightBoxContainer {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: minmax(90px, auto);
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1111px) {
+  .lightBoxContainer {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 15px;
+  }
+}
+
+.lightBoxContainer a {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.lightBoxContainer a img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 3000ms ease-in-out !important;
+  transition: -webkit-transform 3000ms ease-in-out !important;
+  transition: transform 3000ms ease-in-out !important;
+  transition: transform 3000ms ease-in-out, -webkit-transform 3000ms ease-in-out !important;
+}
+
+.lightBoxContainer a img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 3000ms ease-in-out !important;
+  transition: -webkit-transform 3000ms ease-in-out !important;
+  transition: transform 3000ms ease-in-out !important;
+  transition: transform 3000ms ease-in-out, -webkit-transform 3000ms ease-in-out !important;
+}
+
+.lightBoxBackground {
+  z-index: 101;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(250, 250, 250, 0.6);
+}
+
+.lightBoxBackground .lightBoxBackgroundInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  border: 0px;
+  outline: none;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.lightBoxBackground .lightBoxBackgroundInner .lightBoxBackgroundWrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.lightBoxBackground .lightBoxBackgroundInner .lightBoxBackgroundWrapper .buttonHolder {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: inline;
+}
+
+.lightBoxBackground .lightBoxBackgroundInner .lightBoxBackgroundWrapper .buttonHolder a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #111111;
+  font-family: 'Mark-Bold';
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.lightBoxBackground .lightBoxBackgroundInner .lightBoxBackgroundWrapper .buttonHolder a span {
+  width: 40px;
+  height: 40px;
+  background: no-repeat center url(../../images/icons/close.svg);
+}
+
+/*----------projects holder wrapper----------------*/
+.projectOne {
+  padding-top: 8em;
+  background: #fafafa;
+}
+
+.projectOne .quoteWrapper {
+  margin-left: 3em;
+  margin-bottom: 8em;
+}
+
+.projectOne .quoteWrapper h1 {
+  font-size: 3.375rem;
+  letter-spacing: 0.5rem;
+  font-family: 'Mark-Extralight';
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.projectOne .year {
+  padding-left: 30px;
+  font-family: 'Mark-Medium';
+  letter-spacing: 0.125rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 766px) {
+  .projectOne .year {
+    padding-left: 25px;
+  }
+}
+
+.projectOne .projectWrapper {
+  padding: 1em 2em 4em 2em;
+}
+
+@media (max-width: 766px) {
+  .projectOne .projectWrapper {
+    padding: 1em 1.5em 4em 1.5em;
+  }
+}
+
+.projectOne .projectWrapper .recentHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projectOne .projectWrapper .recentHeader .headerName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectOne .projectWrapper .recentHeader .headerName .patternIcon {
+  margin-right: 15px;
+  background: no-repeat center url(../../images/icons/gradient-bullet.svg);
+  width: 45px;
+  height: 40px;
+}
+
+.projectOne .projectWrapper .recentHeader .headerName h2 {
+  font-family: 'Mark-Medium';
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+}
+
+@media (max-width: 766px) {
+  .projectOne .projectWrapper .recentHeader .headerName h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.projectOne .projectWrapper .recentHeader p {
+  margin: 10px 3.1em;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 766px) {
+  .projectOne .projectWrapper .recentHeader p {
+    margin-right: 0;
+    font-size: 1.125rem;
+  }
+}
+
+.projectOne .projectWrapper .imageWrapper {
+  padding: 12em 4em 21em 4em;
+  margin-left: 20px;
+  margin-top: -4em;
+  border-left: 2px solid #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 766px) {
+  .projectOne .projectWrapper .imageWrapper {
+    padding: 5em 0em 8em 0em;
+    border: 0;
+    margin: 0;
+  }
+}
+
+.projectTwo, .projectThree, .projectFour, .projectFive, .projectSix {
+  background: #fafafa;
+  margin-top: -35px;
+}
+
+.projectTwo .quoteWrapper, .projectThree .quoteWrapper, .projectFour .quoteWrapper, .projectFive .quoteWrapper, .projectSix .quoteWrapper {
+  margin-left: 3em;
+  margin-bottom: 8em;
+}
+
+.projectTwo .quoteWrapper h1, .projectThree .quoteWrapper h1, .projectFour .quoteWrapper h1, .projectFive .quoteWrapper h1, .projectSix .quoteWrapper h1 {
+  font-size: 3.375rem;
+  letter-spacing: 0.5rem;
+  font-family: 'Mark-Extralight';
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.projectTwo .year, .projectThree .year, .projectFour .year, .projectFive .year, .projectSix .year {
+  padding-left: 30px;
+  font-family: 'Mark-Medium';
+  letter-spacing: 0.125rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 766px) {
+  .projectTwo .year, .projectThree .year, .projectFour .year, .projectFive .year, .projectSix .year {
+    padding-left: 25px;
+  }
+}
+
+.projectTwo .projectWrapper, .projectThree .projectWrapper, .projectFour .projectWrapper, .projectFive .projectWrapper, .projectSix .projectWrapper {
+  padding: 1em 2em 4em 2em;
+}
+
+@media (max-width: 766px) {
+  .projectTwo .projectWrapper, .projectThree .projectWrapper, .projectFour .projectWrapper, .projectFive .projectWrapper, .projectSix .projectWrapper {
+    padding: 1em 1.5em 4em 1.5em;
+  }
+}
+
+.projectTwo .projectWrapper .recentHeader, .projectThree .projectWrapper .recentHeader, .projectFour .projectWrapper .recentHeader, .projectFive .projectWrapper .recentHeader, .projectSix .projectWrapper .recentHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projectTwo .projectWrapper .recentHeader .headerName, .projectThree .projectWrapper .recentHeader .headerName, .projectFour .projectWrapper .recentHeader .headerName, .projectFive .projectWrapper .recentHeader .headerName, .projectSix .projectWrapper .recentHeader .headerName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectTwo .projectWrapper .recentHeader .headerName .patternIcon, .projectThree .projectWrapper .recentHeader .headerName .patternIcon, .projectFour .projectWrapper .recentHeader .headerName .patternIcon, .projectFive .projectWrapper .recentHeader .headerName .patternIcon, .projectSix .projectWrapper .recentHeader .headerName .patternIcon {
+  margin-right: 15px;
+  background: no-repeat center url(../../images/icons/gradient-bullet.svg);
+  width: 45px;
+  height: 40px;
+}
+
+.projectTwo .projectWrapper .recentHeader .headerName h2, .projectThree .projectWrapper .recentHeader .headerName h2, .projectFour .projectWrapper .recentHeader .headerName h2, .projectFive .projectWrapper .recentHeader .headerName h2, .projectSix .projectWrapper .recentHeader .headerName h2 {
+  font-family: 'Mark-Medium';
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+}
+
+@media (max-width: 766px) {
+  .projectTwo .projectWrapper .recentHeader .headerName h2, .projectThree .projectWrapper .recentHeader .headerName h2, .projectFour .projectWrapper .recentHeader .headerName h2, .projectFive .projectWrapper .recentHeader .headerName h2, .projectSix .projectWrapper .recentHeader .headerName h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.projectTwo .projectWrapper .recentHeader p, .projectThree .projectWrapper .recentHeader p, .projectFour .projectWrapper .recentHeader p, .projectFive .projectWrapper .recentHeader p, .projectSix .projectWrapper .recentHeader p {
+  margin: 10px 3.1em;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 766px) {
+  .projectTwo .projectWrapper .recentHeader p, .projectThree .projectWrapper .recentHeader p, .projectFour .projectWrapper .recentHeader p, .projectFive .projectWrapper .recentHeader p, .projectSix .projectWrapper .recentHeader p {
+    margin-right: 0;
+    font-size: 1.125rem;
+  }
+}
+
+.projectTwo .projectWrapper .imageWrapper, .projectThree .projectWrapper .imageWrapper, .projectFour .projectWrapper .imageWrapper, .projectFive .projectWrapper .imageWrapper, .projectSix .projectWrapper .imageWrapper {
+  padding: 12em 4em 21em 4em;
+  margin-left: 20px;
+  margin-top: -4em;
+  border-left: 2px solid #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 766px) {
+  .projectTwo .projectWrapper .imageWrapper, .projectThree .projectWrapper .imageWrapper, .projectFour .projectWrapper .imageWrapper, .projectFive .projectWrapper .imageWrapper, .projectSix .projectWrapper .imageWrapper {
+    padding: 5em 0em 8em 0em;
+    border: 0;
+    margin: 0;
+  }
+}
+
+.backtoTop {
+  background: #fafafa;
+  margin-top: -35px;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 766px) {
+  .backtoTop:first-of-type {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.backtoTop .backtoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.backtoTop .backtoWrapper .topIcon {
+  margin-right: 15px;
+  background: no-repeat center url(../../images/icons/backtop.svg);
+  width: 45px;
+  height: 40px;
+  -webkit-animation-name: topPosition;
+          animation-name: topPosition;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+@-webkit-keyframes topPosition {
+  from {
+    background-position-y: 6px;
+  }
+  to {
+    background-position-y: 0px;
+  }
+}
+
+@keyframes topPosition {
+  from {
+    background-position-y: 6px;
+  }
+  to {
+    background-position-y: 0px;
+  }
+}
+
+.backtoTop .backtoWrapper h4 {
+  font-family: 'Mark-Bold';
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+}
+/*# sourceMappingURL=projects.module.min.css.map */
