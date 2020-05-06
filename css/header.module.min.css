@@ -18,17 +18,109 @@
   height: 100vh;
   background: no-repeat center #f2f2f2 url(../../images/icons/gradient-bullet.svg);
   background-size: 200%;
+  -webkit-animation-name: position_change;
+          animation-name: position_change;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes position_change {
+  from {
+    background-position-x: 155%;
+  }
+  to {
+    background-position-x: 0;
+  }
+}
+
+@keyframes position_change {
+  from {
+    background-position-x: 155%;
+  }
+  to {
+    background-position-x: 0;
+  }
 }
 
 @media (max-width: 766px) {
   .container .navigationContainer {
     background-size: 500%;
+    -webkit-animation-name: position_change;
+            animation-name: position_change;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  @-webkit-keyframes position_change {
+    from {
+      background-position-x: 100%;
+    }
+    to {
+      background-position-x: 0;
+    }
+  }
+  @keyframes position_change {
+    from {
+      background-position-x: 100%;
+    }
+    to {
+      background-position-x: 0;
+    }
   }
 }
 
 @media (min-width: 768px) and (max-width: 1111px) {
   .container .navigationContainer {
     background-size: 400%;
+    -webkit-animation-name: position_change;
+            animation-name: position_change;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  @-webkit-keyframes position_change {
+    from {
+      background-position-x: 155%;
+    }
+    to {
+      background-position-x: 0;
+    }
+  }
+  @keyframes position_change {
+    from {
+      background-position-x: 155%;
+    }
+    to {
+      background-position-x: 0;
+    }
   }
 }
 

@@ -25,6 +25,8 @@
 
                 }
     .headerWrapper{
+        max-width: 1400px;
+        margin: 0 auto;
         .headerContainer{
             display: flex;
             justify-content: space-around;
@@ -61,6 +63,8 @@
         display: flex;
         justify-content: space-around;
          padding-top: 8em;
+         max-width: 1400px;
+         margin: 0 auto;
          @include biggerPhone{
             padding: 6em 1.5em 0 1.5em;
             flex-direction: column;
@@ -159,6 +163,8 @@
             }
     }
     .authorDescription{
+        max-width: 1400px;
+        margin: 0 auto;
         padding: 0 2em 10em;
         display: flex;
         justify-content: space-around;
@@ -237,7 +243,7 @@
             padding: 6em 0 0 0;  
         }
     h2{
-        margin-left: 1em;
+        margin-left: 2em;
         font-family: 'Mark-Medium';  
         @include fontSize(28px);
         @include letterSpacing(3px);
@@ -322,9 +328,7 @@
         display: flex;
         align-items: flex-end;
         height: 60vh;
-        @include biggerPhone{
-            margin-top: 13em;
-        }
+       
         p{
             padding: 2em;
              line-height: 2.2em;
@@ -349,7 +353,8 @@
 
         }
         h2{
-            padding-bottom: 2em;
+            padding: 2em;
+            text-align: center;
             font-family: 'Mark-Medium';  
             @include fontSize(28px);
             @include letterSpacing(3px);

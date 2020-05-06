@@ -34,6 +34,11 @@
   font-weight: 200;
 }
 
+.company .quoteSection .headerWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .company .quoteSection .headerWrapper .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,6 +97,8 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 8em;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 @media (max-width: 766px) {
@@ -229,6 +236,8 @@
 }
 
 .author .authorDescription {
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 0 2em 10em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,7 +439,7 @@
 }
 
 .clientList .clientListWrapper h2 {
-  margin-left: 1em;
+  margin-left: 2em;
   font-family: 'Mark-Medium';
   font-size: 1.75rem;
   letter-spacing: 0.1875rem;
@@ -559,12 +568,6 @@
   height: 60vh;
 }
 
-@media (max-width: 766px) {
-  .clientList .adriaticHolderInfo {
-    margin-top: 13em;
-  }
-}
-
 .clientList .adriaticHolderInfo p {
   padding: 2em;
   line-height: 2.2em;
@@ -600,7 +603,8 @@
 }
 
 .adriatic .adriaticHolder h2 {
-  padding-bottom: 2em;
+  padding: 2em;
+  text-align: center;
   font-family: 'Mark-Medium';
   font-size: 1.75rem;
   letter-spacing: 0.1875rem;
