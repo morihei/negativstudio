@@ -14,11 +14,11 @@
 .lightBoxContainer{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(5, calc(50% - 20px * 2)) 10px;
+    grid-template-columns: repeat(7, calc(50% - 20px * 2)) 10px;
     grid-template-rows: minmax(150px, 1fr);
     overflow-x: scroll;
     scroll-snap-type: x proximity;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none; /* Firefox */ 
     -ms-overflow-style: none;
     @include biggerPhone{
         display: flex;
@@ -434,7 +434,8 @@
       
   
 }
-    .projectInfo{
+    .projectInfo{ 
+        display: none;
         padding: 1em 0 11em 5em;
         @include biggerPhone{
             padding: 6em 1.5em 6em 1.5em;

@@ -9,8 +9,8 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: (calc(50% - 20px * 2))[5] 10px;
-      grid-template-columns: repeat(5, calc(50% - 20px * 2)) 10px;
+  -ms-grid-columns: (calc(50% - 20px * 2))[7] 10px;
+      grid-template-columns: repeat(7, calc(50% - 20px * 2)) 10px;
   -ms-grid-rows: minmax(150px, 1fr);
       grid-template-rows: minmax(150px, 1fr);
   overflow-x: scroll;
@@ -762,6 +762,7 @@
 }
 
 .recentWork .projectInfo {
+  display: none;
   padding: 1em 0 11em 5em;
 }
 

@@ -21,7 +21,7 @@
     "how":"Kako radimo to što radimo? <span> Kako radimo to što radimo?</span> Kako radimo to što radimo? Kako radimo to što radimo? Kako radimo to što radimo? ",
     "how_desc":"S napredkom u području dronske i aparatske tehnologije {br} naši najnoviji uređaji pružaju najvišu moguću kvalitetu na tržištu!",
     "drone":"DRON",
-    "drone_desc":"Zračne scene su navigirane s najnovijom dronskom tehnologijom.",
+    "drone_desc":"U usporedbi s stojećim nogama na zemlji, fotografija dronova nudi jedinstvenu perspektivu i beskonačan broj kompozicijskih mogućnosti.",
     "camera":"KAMERA",
     "camera_desc":"Naši najnoviji SLR fotoaparati Canon opremljenisa svim rasponima objektiva spremni su čak i za najzahtjevnije krajolike.",
     "lights":"SVJETLO",
@@ -34,7 +34,7 @@
       "paragraph": "Naletili ste na mrtvu ulicu...."
     },
     "navigation":{
-      "work": "Naše zlato",
+      "work": "Naši projekti",
       "about_us": "O Negativ studiju",
       "contact_us": "Javite nam se"
 

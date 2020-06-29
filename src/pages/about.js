@@ -162,7 +162,6 @@ return(
       </div>
       <div className={aboutModule.adriaticHolderInfo}>
           <p>  Foto Luigi, obrt za fotografiju i multimediju<br />
-          vl. David Kurti<br />
           M. Tita 90/2, Opatija<br />
           Poslovnica Lovran Šet. M. Tita 50, Lovran<br />
           OIB 24529544753<br />

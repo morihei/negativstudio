@@ -98,7 +98,7 @@ const Shoots = ({intl}) => (
             <div className={projectsModule.headerName}>
              <div className={projectsModule.patternIcon}></div> 
                <h2>
-                   VILLA ŠTANGER
+                   VILLA GIGI
                 </h2>
             </div>
             <p>
@@ -167,7 +167,7 @@ const Shoots = ({intl}) => (
               <div className={projectsModule.headerName}>
               <div className={projectsModule.patternIcon}></div> 
                 <h2>
-                    VILLA ISTRA
+                    VILLA LUKA
                 </h2>
               </div>
               <p>
@@ -190,7 +190,7 @@ const Shoots = ({intl}) => (
               <div className={projectsModule.headerName}>
               <div className={projectsModule.patternIcon}></div> 
                 <h2>
-                    VILLA LOVRAN
+                    VILLA VENTANA
                 </h2>
               </div>
               <p>
@@ -213,7 +213,7 @@ const Shoots = ({intl}) => (
               <div className={projectsModule.headerName}>
               <div className={projectsModule.patternIcon}></div> 
                 <h2>
-                    VILLA UMAG
+                    APARTMANI UMAG
                 </h2>
               </div>
               <p>
