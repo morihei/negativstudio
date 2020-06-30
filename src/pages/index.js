@@ -94,14 +94,13 @@ const IndexPage = () =>{
             <h1><FormattedMessage id="what_is"
               values={{span: (word) => <span>{word}</span>}} />         
              </h1>
+             <BackgroundImage
+             fluid={data.desktopImage2.childImageSharp.fluid}
+             >
               <p> <FormattedMessage id="what_description"
-              values={{span: (word) => <span className={indexModule.strongText}>{word}</span>}} />     </p> <br />
-          <BackgroundImage
-          fluid={data.desktopImage2.childImageSharp.fluid}
-          >
+              values={{span: (word) => <span className={indexModule.strongText}>{word}</span>}} />     </p> 
         <div className={indexModule.whatIsHolder}>
-              <p>{intl.formatMessage({ id: "what_description_second" })}</p>
-            
+             
               <div className={indexModule.buttonMain}>               
                 <Link to="/about"><img src={house} alt="house icon" /> <div className={indexModule.buttonText}>{intl.formatMessage({ id: "link_about" })}</div></Link>
               </div>

@@ -458,12 +458,19 @@
   font-family: 'Mark-Medium';
 }
 
-.whatIs .whatIsHolder p {
-  padding-bottom: 25em;
+.whatIs .whatIsHolder {
+  margin-top: 6em;
+}
+
+@media (max-width: 766px) {
+  .whatIs .whatIsHolder {
+    margin-top: 0;
+    margin-bottom: 45em;
+  }
 }
 
 .whatIs .whatIsHolder .buttonMain {
-  margin: 100px;
+  margin-bottom: 55em;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: -webkit-box;

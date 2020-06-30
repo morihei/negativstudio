@@ -278,11 +278,13 @@
         }
     }
     .whatIsHolder{
-        p{
-                padding-bottom: 25em;  
-            }
+        margin-top: 6em;
+        @include biggerPhone{
+        margin-top: 0;
+        margin-bottom: 45em;
+        }
             .buttonMain{
-                margin: 100px;
+                margin-bottom: 55em; 
                 justify-content: space-around;
                 display: flex;
                 //@include buttonMainBig;
