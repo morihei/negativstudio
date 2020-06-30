@@ -279,6 +279,7 @@
     }
     .whatIsHolder{
         margin-top: 6em;
+        
         @include biggerPhone{
         margin-top: 0;
         margin-bottom: 45em;
